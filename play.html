@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drift</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas></canvas>
+    <div id="tools">
+        <div id="modes">
+            <input type="radio" id="attractive" name="mode" checked>
+            <label for="attractive" style="color: #667a8a">+</label>
+            <input type="radio" id="repulsive" name="mode">
+            <label for="repulsive" style="color: #9a5c52">-</label>
+            <input type="radio" id="remove" name="mode">
+            <label for="remove" style="color: #464646">x</label>
+        </div>
+        <button id="start">Start</button>
+    </div>
+    <button id="reset" onclick="window.location.reload()"><img src="assets/Reset.svg"></button>
+    <div id="level-passed">
+        Level Completed!
+        <button id="main-menu">Main Menu</button>
+        <button id="next-level">Next Level</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
